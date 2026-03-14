@@ -15,7 +15,7 @@ const ROADMAP = [
 
 const APPS = [
   { name: 'apps/shell', status: 'live', desc: 'Project hub. Roadmap, app cards, links to all deployments.', stack: ['vite', 'react 18', 'typescript'], link: 'stack-journal-shell.vercel.app' },
-  { name: 'packages/ui', status: 'live', desc: 'Shared component library. Atoms + molecules + Storybook docs.', stack: ['storybook 10', 'atomic design'], link: 'storybook.vercel.app' },
+  { name: 'packages/ui', status: 'live', desc: 'Shared component library. Atoms + molecules + Storybook docs.', stack: ['storybook 10', 'atomic design'], link: 'stack-journal-storybook.vercel.app' },
   { name: 'apps/mfe-shell', status: 'wip', desc: 'Micro frontend host. Loads remote apps at runtime via Module Federation.', stack: ['webpack 5', 'module federation'], link: null },
   { name: 'apps/sports-dashboard', status: 'planned', desc: 'Remote MFE app. Independent deploy, consumes shared UI package.', stack: ['webpack 5', 'module federation'], link: null },
   { name: 'packages/monitoring', status: 'planned', desc: 'Sentry wrapper. Single config consumed by all apps.', stack: ['sentry', 'error boundary'], link: null },
@@ -126,7 +126,7 @@ export default function App() {
                     ))}
                   </div>
                   {app.link
-                    ? <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, color: '#7c6af7', marginTop: 'auto' }}>↗ {app.link}</span>
+                    ? <a href={`https://${app.link}`} target="_blank" rel="noreferrer" style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, color: '#7c6af7', marginTop: 'auto', textDecoration: 'none' }}>↗ {app.link}</a>
                     : <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, color: '#3a3850', marginTop: 'auto' }}>coming soon</span>
                   }
                 </div>
