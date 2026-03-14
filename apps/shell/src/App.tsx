@@ -6,11 +6,13 @@ const ROADMAP = [
   { id: '02', status: 'done', name: 'Design system — atoms', sub: 'button · input · badge', tag: 'apps/shell', tagType: 'shell' },
   { id: '03', status: 'done', name: 'Storybook integration', sub: 'autodocs · interactive controls · visual testing', tag: 'packages/ui', tagType: 'pkg' },
   { id: '04', status: 'done', name: 'Design system — molecules', sub: 'searchbar · alertcard', tag: 'packages/ui', tagType: 'pkg' },
-  { id: '05', status: 'active', name: 'Project hub', sub: 'single page · roadmap · app cards · links', tag: 'apps/shell', tagType: 'shell' },
-  { id: '06', status: 'pending', name: 'Micro frontend shell', sub: 'webpack 5 · module federation · host app', tag: 'apps/mfe-shell', tagType: 'mfe' },
-  { id: '07', status: 'pending', name: 'MFE remote — sports dashboard', sub: 'independent deploy · shared ui · module federation', tag: 'apps/sports-dashboard', tagType: 'mfe' },
-  { id: '08', status: 'pending', name: 'Monitoring — Sentry', sub: 'packages/monitoring · error boundary · performance', tag: 'packages/monitoring', tagType: 'pkg' },
-  { id: '09', status: 'pending', name: 'CI/CD + deployment', sub: 'vercel · github actions · preview urls', tag: 'infra', tagType: 'infra' },
+  { id: '05', status: 'done', name: 'Project hub', sub: 'single page · roadmap · app cards · links', tag: 'apps/shell', tagType: 'shell' },
+  { id: '06', status: 'done', name: 'Micro frontend shell', sub: 'webpack 5 · module federation · host app', tag: 'apps/mfe-shell', tagType: 'mfe' },
+  { id: '07', status: 'done', name: 'MFE remote — sports dashboard', sub: 'independent deploy · shared ui · module federation', tag: 'apps/sports-dashboard', tagType: 'mfe' },
+  { id: '08', status: 'done', name: 'Monitoring — Sentry', sub: 'packages/monitoring · error boundary · performance', tag: 'packages/monitoring', tagType: 'pkg' },
+  { id: '09', status: 'done', name: 'CI/CD + deployment', sub: 'vercel · github actions · preview urls', tag: 'infra', tagType: 'infra' },
+  { id: '10', status: 'pending', name: 'Backend API — Django', sub: 'coming soon', tag: 'apps/api', tagType: 'pkg' },
+  { id: '11', status: 'pending', name: 'Design system — organisms', sub: 'coming soon', tag: 'packages/ui', tagType: 'pkg' },
 ] as const;
 
 const APPS = [
