@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('@module-federation/enhanced');
 
+const SPORTS_URL = process.env.SPORTS_URL || 'http://localhost:3001';
+
 module.exports = {
   entry: './src/index.ts',
   resolve: { extensions: ['.tsx', '.ts', '.js'] },
@@ -15,7 +17,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'shell',
       remotes: {
-        sports: 'sports@http://localhost:3001/remoteEntry.js',
+        sports: `sports@${SPORTS_URL}/remoteEntry.js`,
       },
       shared: {
         react: { singleton: true, requiredVersion: '^18.2.0' },
