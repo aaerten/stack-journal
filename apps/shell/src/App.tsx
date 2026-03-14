@@ -14,7 +14,7 @@ const ROADMAP = [
 ] as const;
 
 const APPS = [
-  { name: 'apps/shell', status: 'live', desc: 'Project hub. Roadmap, app cards, links to all deployments.', stack: ['vite', 'react 18', 'typescript'], link: 'stack-journal.vercel.app' },
+  { name: 'apps/shell', status: 'live', desc: 'Project hub. Roadmap, app cards, links to all deployments.', stack: ['vite', 'react 18', 'typescript'], link: 'stack-journal-shell.vercel.app' },
   { name: 'packages/ui', status: 'live', desc: 'Shared component library. Atoms + molecules + Storybook docs.', stack: ['storybook 10', 'atomic design'], link: 'storybook.vercel.app' },
   { name: 'apps/mfe-shell', status: 'wip', desc: 'Micro frontend host. Loads remote apps at runtime via Module Federation.', stack: ['webpack 5', 'module federation'], link: null },
   { name: 'apps/sports-dashboard', status: 'planned', desc: 'Remote MFE app. Independent deploy, consumes shared UI package.', stack: ['webpack 5', 'module federation'], link: null },
