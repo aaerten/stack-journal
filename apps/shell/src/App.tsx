@@ -11,7 +11,7 @@ const ROADMAP = [
   { id: '07', status: 'done', name: 'MFE remote — sports dashboard', sub: 'independent deploy · shared ui · module federation', tag: 'apps/sports-dashboard', tagType: 'mfe' },
   { id: '08', status: 'done', name: 'Monitoring — Sentry', sub: 'packages/monitoring · error boundary · performance', tag: 'packages/monitoring', tagType: 'pkg' },
   { id: '09', status: 'done', name: 'CI/CD + deployment', sub: 'vercel · github actions · preview urls', tag: 'infra', tagType: 'infra' },
-  { id: '10', status: 'pending', name: 'Backend API — Django', sub: 'coming soon', tag: 'apps/api', tagType: 'pkg' },
+  { id: '10', status: 'done', name: 'Backend API — Django', sub: 'django rest framework · postgresql · redis', tag: 'apps/api', tagType: 'pkg' },
   { id: '11', status: 'pending', name: 'Design system — organisms', sub: 'coming soon', tag: 'packages/ui', tagType: 'pkg' },
 ] as const;
 
@@ -20,6 +20,7 @@ const APPS = [
   { name: 'packages/ui', status: 'live', desc: 'Shared component library. Atoms + molecules + Storybook docs.', stack: ['storybook 10', 'atomic design'], link: 'stack-journal-storybook.vercel.app' },
   { name: 'apps/mfe-shell', status: 'live', desc: 'Micro frontend host. Loads remote apps at runtime via Module Federation.', stack: ['webpack 5', 'module federation'], link: 'stack-journal-mfe.vercel.app' },
   { name: 'apps/sports-dashboard', status: 'live', desc: 'Remote MFE app. Independent deploy, consumes shared UI package.', stack: ['webpack 5', 'module federation'], link: 'stack-journal-sports.vercel.app' },
+  { name: 'apps/api', status: 'live', desc: 'Django REST API. Sports matches endpoint, PostgreSQL + Redis.', stack: ['django', 'postgresql', 'redis', 'railway'], link: null },
   { name: 'packages/monitoring', status: 'planned', desc: 'Sentry wrapper. Single config consumed by all apps.', stack: ['sentry', 'error boundary'], link: null },
 ] as const;
 
