@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('@module-federation/enhanced');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.ts',
@@ -12,6 +13,9 @@ module.exports = {
     }],
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.API_URL': JSON.stringify(process.env.API_URL || 'http://localhost:8000'),
+    }),
     new ModuleFederationPlugin({
       name: 'sports',
       filename: 'remoteEntry.js',
